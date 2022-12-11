@@ -20,20 +20,18 @@ body {
     padding: 1em;
     background-color: #1a333a;
 }
+#sidebar {
+  display: none; /* hide the sidebar by default */
+}
 .logo {
     height: 3em;
     margin-right: 1em;
 }
-#logo {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-}
 #circle {
-  left: 0;
-  top: 0;
   height: 36px;
   width: 36px;
+  transform: rotate(0deg);
+  text-align: left;
 }
 .content {
     display: flex;
