@@ -24,6 +24,10 @@ body {
     height: 3em;
     margin-right: 1em;
 }
+.symbol-logo{
+    height: 3em;
+    margin-right: 1em;
+}
 .content {
     display: flex;
     flex-wrap: wrap;
