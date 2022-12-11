@@ -1,6 +1,18 @@
+/* Add the two main website fonts and initialize */
+@font-face {
+  font-family: 'Signika';
+  src: url('signika.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Orienta';
+  src: url('orienta.ttf') format('truetype');
+}
+
+
 /* Add a font for the entire page */
 body {
-  font-family: sans-serif;
+  font-family: 'Signika';
 }
 
 /* Add a background color and some padding to the container element */
