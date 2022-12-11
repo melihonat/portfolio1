@@ -1,20 +1,25 @@
-// Get the logo element
-var circle = document.getElementById("circle");
-
-if (circle){
-  // Set the initial position of the logo
-  circle.style.position = "relative";
-  circle.style.left = "0px";
+function updateLogoPosition() {
+  var logo = document.getElementById("circle");
+  logo.style.left = /* calculate new left position here */;
+  logo.style.top = /* calculate new top position here */;
 }
-  // Animate the logo by moving it to the right
+
 function animateLogo() {
-  // Set the new position of the logo
-  if (circle){  
-    circle.style.left = parseInt(circle.style.left) + 1 + "px";
+  var startTime = Date.now(); // get the current time in milliseconds
+
+  function update() {
+    // calculate the elapsed time since the previous frame
+    var elapsedTime = Date.now() - startTime;
+
+    // update the position of the logo
+    updateLogoPosition(elapsedTime);
+
+    // request the next frame of the animation
+    requestAnimationFrame(update);
   }
-  // Set a timer to animate the logo again in 10 milliseconds
-  setTimeout(animateLogo, 10);
+
+  // start the animation loop
+  requestAnimationFrame(update);
 }
 
-// Start the animation
-animateLogo();
+window.onload = animateLogo;
