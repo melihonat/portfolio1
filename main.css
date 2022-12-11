@@ -43,6 +43,16 @@ p {
   text-align: justify;
 }
 
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+
 button {
   display: block;
   margin: 0 auto;
