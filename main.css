@@ -32,6 +32,8 @@ body {
 #circle {
   left: 0;
   top: 0;
+  height: 36px;
+  width: 36px;
 }
 .content {
     display: flex;
