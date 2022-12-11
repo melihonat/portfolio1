@@ -30,11 +30,8 @@ body {
   left: 20px;
 }
 #circle {
-  position: absolute;
   left: 0;
   top: 0;
-  width: 360;
-  height: 360;
 }
 .content {
     display: flex;
