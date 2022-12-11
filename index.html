@@ -3,21 +3,10 @@
 <head>
     <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="main.css">
-    <script src="controls.js"></script>
 </head>
-<aside id="sidebar">
-    <h3>Contact Me</h3>
-      <ul>
-        <li>Email: melihonat312@gmail.com</li>
-        <li>Phone: +49 152 21871948</li>
-        <li>LinkedIn: <a href="https://instagram.com/melih.png">https://instagram.com/melih.png</a></li>
-        <li>GitHub: <a href="https://github.com/melihonat">https://github.com/melihonat</a></li>
-      </ul>
-</aside>
-<button id="sidebar-button">Open Sidebar</button>
 <body>
     <div class="header">
-        <img class="symbol-logo" id="circle" src="symbol-logo-transparent.png" alt="My Symbol-Logo">
+        <img class="symbol-logo" id="circle" align="left" src="symbol-logo-transparent.png" alt="My Symbol-Logo">
         <img class="logo" src="full-logo.png" alt="My Logo">
     </div>
     <div class="content">
@@ -38,6 +27,52 @@
         <h2>Check out my latest upload on YouTube here:</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ibSlA-OoBsc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="slideshow_1.png" style="width:100%">
+        <div class="caption">Room designed in Unreal Engine</div>
+      </div>
+      <div class="mySlides">
+        <img src="slideshow_2.jpeg" style="width:50%">
+        <div class="caption">Prototype for an app I designed with a group</div>
+      </div>
+      <div class="mySlides">
+        <img src="slideshow_3.png" style="width:100%">
+        <div class="caption">Excerpt of a zombie tile-game I was working on</div>
+      </div>
+      <div class="mySlides">
+        <img src="slideshow_4.png" style="width:100%">
+        <div class="caption">The frontpage of a fictional website</div>
+      </div>
+      <div class="mySlides">
+        <img src="slideshow_5.webp" style="width:100%">
+        <div class="caption">Character selection for an arcade game</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div id="contact-box">
+      <h2>Contact Me</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <label>Message:</label>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="controls.js"></script>
 </body>
 <footer>
   <div>
@@ -46,4 +81,3 @@
   </div>
 </footer>
 </html>
-<script src="controls.js" defer></script>
