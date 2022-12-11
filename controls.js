@@ -1,6 +1,8 @@
-symbol-logo.addEventListener('transitionend', () => {
-    symbol-logo.style.transform == 'scale(1.2)';
-});
+const circle = document.querySelector('#circle');
+
 function animateCircle() {
-    symbol-logo.style.transform = 'scale(1) rotate(45deg) translate(50px, 50px)';
+    circle.style.transform = 'scale(1.2)';
+    circle.style.transition = 'transform 0.5s ease-in-out';
 }
+
+circle.addEventListener('mouseover', animateCircle);
