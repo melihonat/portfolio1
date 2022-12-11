@@ -28,15 +28,14 @@ body {
   position: fixed;
   top: 20px;
   left: 20px;
-  height: 3em;
 }
-
 #circle {
   position: absolute;
   left: 0;
   top: 0;
+  width: 360;
+  height: 360;
 }
-
 .content {
     display: flex;
     flex-wrap: wrap;
