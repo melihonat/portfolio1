@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #1a333a;
-  background-image: linear-gradient(to right, #7f7fd5, #86a8e7, #e9e059);
+  background-image: linear-gradient(to right, #1a333a, #86a8e7, #e9e059);
 }
 
 nav {
