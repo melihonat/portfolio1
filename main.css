@@ -35,9 +35,10 @@ body {
     margin: 0.5em;
     padding: 1em;
     transition: opacity 0.2s ease-in-out;
+    opacity: 0.5;
 }
 .section:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
 .section h2 {
     color: #e29127;
