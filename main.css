@@ -24,9 +24,6 @@ body {
     height: 3em;
     margin-right: 1em;
 }
-#container {
-  position: relative; /* necessary for positioning the logo absolutely */
-}
 
 #circle {
   position: absolute;
@@ -65,4 +62,13 @@ body {
 }
 .video h2 {
     color: #e29127;
+}
+footer {
+  background-color: #1a333a;
+  color: #fff;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
 }
