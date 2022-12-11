@@ -1,12 +1,12 @@
 /* Add the two main website fonts and initialize */
 @font-face {
   font-family: 'Signika';
-  src: url('signika.ttf') format('truetype');
+  src: url('Signika-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Orienta';
-  src: url('orienta.ttf') format('truetype');
+  src: url('Orienta-Regular.ttf') format('truetype');
 }
 body {
   font-family: 'Signika';
