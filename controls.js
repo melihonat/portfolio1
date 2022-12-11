@@ -1,31 +1,59 @@
-// Get the image element from the HTML
-var imgElement = document.getElementById('circle');
+// Set the initial number of logos to display
+const numLogos = 10;
 
-// Define the initial position and speed of the image
-var xPos = 0;
-var yPos = 0;
-var xSpeed = 5;
-var ySpeed = 5;
+// Create the logos and add them to the container
+for (let i = 0; i < numLogos; i++) {
+  // Create a new logo element
+  const logo = document.createElement("img");
+  logo.src = "symbol-logo-transparent.png";
 
-function animate() {
-  // Move the image horizontally
-  xPos += xSpeed;
+  // Set a random initial position and angle for the logo
+  logo.style.position = "absolute";
+  logo.style.left = Math.random() * window.innerWidth + "px";
+  logo.style.top = Math.random() * window.innerHeight + "px";
+  logo.style.transform = "rotate(" + Math.random() * 360 + "deg)";
 
-  // If the image hits the edge of the window, reverse its horizontal direction
-  if (xPos > window.innerWidth || xPos < 0) {
-    xSpeed = -xSpeed;
-  }
-
-  // Update the position and rotation of the image
-  imgElement.style.transform = 'translate(' + xPos + 'px, ' + yPos + 'px) rotate(10deg)';
-
-  // Animate the image repeatedly
-  requestAnimationFrame(animate);
+  // Add the logo to the container
+  container.appendChild(logo);
 }
 
-// Start the animation
-animate();
+// Define the animation function
+function animateLogos() {
+  // Get all the logo elements
+  const logos = document.querySelectorAll("#container img");
 
+  // Update the position and angle of each logo
+  logos.forEach(logo => {
+    // Calculate the new position of the logo
+    let currentLeft = parseInt(logo.style.left);
+    let currentTop = parseInt(logo.style.top);
+
+    // Instead of adding a random value to the current position,
+    // subtract a value to make the logo move up
+    let newLeft = currentLeft;
+    let newTop = currentTop - 10;
+
+    // If the logo has reached the end of the screen, remove it from the page
+    if (newLeft < 0 || newLeft > window.innerWidth || newTop < 0 || newTop > window.innerHeight) {
+      container.removeChild(logo);
+    } else {
+      // Update the position of the logo
+      logo.style.left = newLeft + "px";
+      logo.style.top = newTop + "px";
+
+      // Calculate the new angle of the logo
+      let currentAngle = parseInt(logo.style.transform.replace("rotate(", "").replace("deg)", ""));
+      let newAngle = currentAngle + 5;
+
+      // If the logo has reached the maximum angle, reset its angle to 0
+      if (newAngle > 360) {
+        newAngle = 0;
+      }
+    }
+  });
+}
+
+setInterval(animateLogos, 20);
 
 const form = document.querySelector('#contact-box form');
 const nameInput = document.querySelector('#name');
