@@ -6,11 +6,12 @@ if (circle){
   circle.style.position = "relative";
   circle.style.left = "0px";
 }
-// Animate the logo by moving it to the right
+  // Animate the logo by moving it to the right
 function animateLogo() {
   // Set the new position of the logo
-  circle.style.left = parseInt(circle.style.left) + 1 + "px";
-
+  if (circle){  
+    circle.style.left = parseInt(circle.style.left) + 1 + "px";
+  }
   // Set a timer to animate the logo again in 10 milliseconds
   setTimeout(animateLogo, 10);
 }
