@@ -12,8 +12,8 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
-  background-image: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+  background-color: #1a333a;
+  background-image: linear-gradient(to right, #7f7fd5, #86a8e7, #e9e059);
 }
 
 nav {
