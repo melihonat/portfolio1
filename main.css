@@ -34,9 +34,17 @@ body {
     background-color: #e4ab37;
     margin: 0.5em;
     padding: 1em;
+    transition: opacity 0.2s ease-in-out;
+}
+.section:hover {
+    opacity: 0.5;
 }
 .section h2 {
     color: #e29127;
+    transition: color 0.2s ease-in-out;
+}
+.section h2:hover {
+    color: #1a333a;
 }
 .section p {
     color: #e6c548;
