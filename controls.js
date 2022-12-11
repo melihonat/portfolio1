@@ -1,8 +1,24 @@
-function updateLogoPosition() {
+function updateLogoPosition(elapsedTime) {
+  // calculate the elapsed time in seconds
+  var elapsedSeconds = elapsedTime / 1000;
+
+  // update the angle of the logo based on the elapsed time and speed
+  angle += elapsedSeconds * speed;
+
+  // calculate the horizontal and vertical displacement of the logo
+  var x = radius * Math.cos(angle);
+  var y = radius * Math.sin(angle);
+
+  // calculate the new left and top positions of the logo
+  var left = x + radius;
+  var top = y + radius;
+
+  // update the position of the logo
   var logo = document.getElementById("circle");
-  logo.style.left = 50;
-  logo.style.top = 100;
+  logo.style.left = left + "px";
+  logo.style.top = top + "px";
 }
+
 
 function animateLogo() {
   var startTime = Date.now(); // get the current time in milliseconds
