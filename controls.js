@@ -1,8 +1,11 @@
-// select the logo element from the DOM
-const logo = document.querySelector('#circle');
+// create an animation timeline
+const timeline = new AnimationTimeline();
 
-// create a new animation for the logo
-const logoAnimation = new Animation(logo, {
+// select the logo element from the DOM
+const logo = document.querySelector('#logo');
+
+// create a new animation for the logo using the timeline
+const logoAnimation = new Animation(logo, timeline, {
   // specify the size of the logo
   height: 100,
   width: 100,
