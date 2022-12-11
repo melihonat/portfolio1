@@ -1,7 +1,7 @@
 function updateLogoPosition() {
   var logo = document.getElementById("circle");
-  logo.style.left = /* calculate new left position here */;
-  logo.style.top = /* calculate new top position here */;
+  logo.style.left = 50;
+  logo.style.top = 100;
 }
 
 function animateLogo() {
