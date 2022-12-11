@@ -24,6 +24,11 @@ body {
     height: 3em;
     margin-right: 1em;
 }
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
 
 #circle {
   position: absolute;
