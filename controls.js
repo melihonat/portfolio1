@@ -1,34 +1,18 @@
-// create an animation timeline
-const timeline = new AnimationTimeline();
+// Get the logo element
+var logo = document.getElementById("circle");
 
-// select the logo element from the DOM
-const logo = document.querySelector('#logo');
+// Set the initial position of the logo
+logo.style.position = "relative";
+logo.style.left = "0px";
 
-// create a new animation for the logo using the timeline
-const logoAnimation = new Animation(logo, timeline, {
-  // specify the size of the logo
-  height: 100,
-  width: 100,
-  // specify the starting position of the logo
-  top: 50,
-  left: 50,
-  // specify the duration of the animation in milliseconds
-  duration: 1000
-});
+// Animate the logo by moving it to the right
+function animateLogo() {
+  // Set the new position of the logo
+  logo.style.left = parseInt(logo.style.left) + 1 + "px";
 
-// create a keyframe for the animation
-logoAnimation.addKeyframe(0, {
-  // specify the starting position of the logo
-  top: 50,
-  left: 50
-});
+  // Set a timer to animate the logo again in 10 milliseconds
+  setTimeout(animateLogo, 10);
+}
 
-// create another keyframe for the animation
-logoAnimation.addKeyframe(500, {
-  // specify the ending position of the logo
-  top: 100,
-  left: 100
-});
-
-// start the animation
-logoAnimation.start();
+// Start the animation
+animateLogo();
