@@ -1,3 +1,13 @@
+// define the radius of the circle in pixels
+var radius = 100;
+
+// define the starting angle of the logo in radians
+var angle = 0;
+
+// define the speed of the animation in radians per second
+var speed = 0.1;
+
+
 function updateLogoPosition(elapsedTime) {
   // calculate the elapsed time in seconds
   var elapsedSeconds = elapsedTime / 1000;
