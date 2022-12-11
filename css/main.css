@@ -8,58 +8,27 @@
   font-family: 'Orienta';
   src: url('orienta.ttf') format('truetype');
 }
-
-
-/* Add a font for the entire page */
 body {
   font-family: 'Signika';
+  padding: 2em;
 }
-
-/* Add a background color and some padding to the container element */
-.container {
-  background-color: #f8f8f8;
-  padding: 20px;
-}
-
-/* Style the header */
-header {
+h1, h2, h3 {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
 }
-
-/* Style the links in the navigation bar */
-nav a {
-  display: inline-block;
-  padding: 8px 10px;
-  text-decoration: none;
-  color: #333;
-}
-
-/* Add a hover effect to the links */
-nav a:hover {
-  color: #fff;
+button {
+  padding: 1em;
+  border: none;
   background-color: #333;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
 }
-
-/* Style the section headers */
-section h2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
+form {
+  max-width: 30em;
+  margin: 0 auto;
 }
-
-/* Style the section content */
-section p {
-  line-height: 24px;
-  margin-bottom: 20px;
-}
-
-/* Style the footer */
-footer {
-  text-align: center;
-  font-size: 14px;
-  color: #999;
-  margin-top: 20px;
+label, input, textarea {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
 }
