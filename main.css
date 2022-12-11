@@ -9,65 +9,35 @@
   src: url('Orienta-Regular.ttf') format('truetype');
 }
 body {
+    font-family: 'Orienta';
     background-color: #1a333a;
-    color: #e9e059;
-    font-family: sans-serif;
+    color: white;
+}
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    padding: 1em;
+    background-color: #e9e059;
 }
-
-a {
-    color: #1a333a;
-    text-decoration: none;
+.logo {
+    height: 3em;
+    margin-right: 1em;
 }
-
-a:hover {
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.section {
+    flex: 1 0 300px;
+    background-color: #e4ab37;
+    margin: 0.5em;
+    padding: 1em;
+}
+.section h2 {
     color: #e29127;
 }
-
-header, footer {
-    background-color: #e4ab37;
+.section p {
     color: #e6c548;
-    padding: 1em;
-}
-
-h1 {
-    color: #e9e059;
-    text-align: center;
-}
-
-nav {
-    background-color: rgba(230, 197, 72, 0.8);
-    padding: 1em;
-    border-radius: 0.5em;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    font-weight: bold;
-}
-
-section {
-    padding: 2em;
-    margin: 1em;
-    background-color: #e9e059;
-    border-radius: 0.5em;
-}
-
-section h2 {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-section#contact a {
-    color: #e4ab37;
 }
