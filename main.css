@@ -41,12 +41,6 @@ body {
   height: 20%;
   opacity: 0.5;
 }
-#circle {
-  height: 36px;
-  width: 36px;
-  position: absolute;
-  left: 0;
-}
 .content {
     display: flex;
     flex-wrap: wrap;
