@@ -1,5 +1,5 @@
 // Set the initial number of logos to display
-const numLogos = 10;
+const numLogos = 20;
 
 // Create the logos and add them to the container
 for (let i = 0; i < numLogos; i++) {
