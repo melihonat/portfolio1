@@ -1,10 +1,11 @@
 // Get the logo element
 var circle = document.getElementById("circle");
 
-// Set the initial position of the logo
-circle.style.position = "relative";
-circle.style.left = "0px";
-
+if (circle){
+  // Set the initial position of the logo
+  circle.style.position = "relative";
+  circle.style.left = "0px";
+}
 // Animate the logo by moving it to the right
 function animateLogo() {
   // Set the new position of the logo
